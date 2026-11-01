@@ -93,7 +93,7 @@ window.addEventListener("resize",function(){if(cur)place(cur)});
  var line=parseFloat(q.get("line"));if(isNaN(line))line=0.15;
  var stopped=false,t0=0;
  function stop(){stopped=true}
- ["wheel","touchstart","keydown","mousedown"].forEach(function(e){window.addEventListener(e,stop,{passive:true})});
+ window.addEventListener("keydown",function(e){if(e.key==="Escape")stop()});
  function step(now){
   if(stopped)return;
   var f=Math.min(1,(now-t0)/(dur*1000));
