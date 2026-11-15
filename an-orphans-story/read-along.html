@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>An Orphan’s Story: Read Along</title>
+<style>
+:root{--bg:#f6f1e7;--page:#ffffff;--ink:#26332c;--accent:#339966;--line:#e2d9c6;--hl:#cdebd9;--card:#fff}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scrollbar-color:var(--accent) var(--line)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Trebuchet MS",Verdana,sans-serif;padding:12px}
+html.embedded body{background:#fff}
+.book{max-width:760px;margin:0 auto 100vh;background:var(--page);border:3px solid var(--line);border-left:14px solid var(--accent);border-radius:14px;padding:18px 24px 22px;box-shadow:0 6px 18px rgba(0,0,0,.12)}
+h1{font-family:Georgia,serif;font-size:1.5rem;color:var(--accent);margin:0 0 2px}
+.hint{font-size:.9rem;background:var(--card);border:2px dashed var(--line);border-radius:10px;padding:6px 10px;margin:0 0 16px}
+.hint u{text-decoration:none;border-bottom:2px dotted var(--accent);padding-bottom:1px}
+.text p{font-size:1.2rem;line-height:1.8;margin:0 0 1em;position:relative;padding-left:2.4rem}
+.text p::before{content:attr(data-n);position:absolute;left:0;top:.28em;width:1.8rem;height:1.8rem;line-height:1.8rem;text-align:center;border-radius:50%;background:var(--accent);color:#fff;font-weight:bold;font-size:.95rem}
+.vw{border-bottom:3px dotted var(--accent);cursor:pointer;border-radius:3px;padding-bottom:1px}
+.vw:hover,.vw:focus,.vw.on{background:var(--hl);outline:none}
+.vw:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+#tip{position:absolute;z-index:10;width:250px;background:var(--card);border:3px solid var(--accent);border-radius:12px;padding:8px 10px;box-shadow:0 6px 16px rgba(0,0,0,.25);display:none;gap:10px;align-items:flex-start;font-size:1rem;line-height:1.35}
+#tip.show{display:flex}
+#tip.noimg img{display:none}
+#tip img{width:72px;height:72px;border-radius:8px;border:2px solid var(--line);flex:none;background:#fff}
+#tip .tw{font-family:Georgia,serif;font-weight:bold;font-size:1.15rem;color:var(--accent)}
+#tip .tp{font-style:italic;font-size:.85rem;margin-left:4px;opacity:.8}
+#tip .td{margin-top:2px}
+#tip.big{width:280px;flex-direction:column;gap:6px}
+#tip.big img{width:100%;height:auto;aspect-ratio:560/399;object-fit:contain}
+@media (max-width:480px){.book{padding:14px 14px 18px;border-left-width:10px}.text p{font-size:1.1rem;padding-left:2.2rem}}
+</style><script>try{if(window.self!==window.top)document.documentElement.className+=' embedded'}catch(e){document.documentElement.className+=' embedded'}</script></head><body>
+<div class="book">
+<h1>An Orphan’s Story</h1>
+<div class="text">
+<p data-n="1">After I lost my mother, every sound was a <span class="vw" tabindex="0" role="button" data-k="threat">threat</span>: a <span class="vw" tabindex="0" role="button" data-k="rustle">rustle</span> in the grass of the <span class="vw" tabindex="0" role="button" data-k="savannah">savannah</span>, a faraway pop, the screech of birds. I <span class="vw" tabindex="0" role="button" data-k="huddled">huddled</span> under a tree, shaking uncontrollably. I was huge, yes, but I was still young and I had never been without my mother. Without her, I had no idea how to live. Without her, I was terrified.</p>
+<p data-n="2">When I had first seen the men running toward us with their weapons, I raised my trunk high in the air and <span class="vw" tabindex="0" role="button" data-k="blared">blared</span> a warning. But I was too late to save my mother.</p>
+<p data-n="3">My family and I could do nothing but <span class="vw" tabindex="0" role="button" data-k="scatter">scatter</span>, hoping to survive. In a panic, I ran faster than I ever had, so fast the wind whooshed in my flapping ears. I ran farther than I ever meant to. When I finally stopped, everything was quiet, and my family was gone.</p>
+<p data-n="4">After days in my hiding place, I was <span class="vw" tabindex="0" role="button" data-k="parched">parched</span>. I walked into the hot sun, alert to noises, until I reached a water hole. I gulped water, barely taking a breath, and squirted big trunkfuls onto my back. I was so busy drinking that I didn't notice I had sunk deep into the mud -- this had happened to me once before, but my mother had pulled me out. Now, I was helpless. For days, I <span class="vw" tabindex="0" role="button" data-k="whimpered">whimpered</span>, heartbroken and hungry.</p>
+<p data-n="5">When a man found me in the mud, I tried to struggle, but I was too weak. This man seemed different from the ones I had seen before. He approached slowly, offered a hand, and then dripped a bottle into my mouth: milk, like my mother's. "Nice boy," he said. He spoke softly, and even through my exhaustion, I could sense that his gentleness was real.</p>
+<p data-n="6">Now that I am fully grown, I know that I was right to trust him. The man, David, became one of my keepers at the <span class="vw" tabindex="0" role="button" data-k="sanctuary">sanctuary</span>, and the other animals he cared for became my new family. For years he and my other keepers fed me, took me on walks, played games with me, and <span class="vw" tabindex="0" role="button" data-k="soothed">soothed</span> me when I woke from nightmares.</p>
+<p data-n="7">I will never forget the worst part of my life, but I will also never forget the kindness that saved me afterward.</p>
+</div>
+</div>
+<div id="tip" role="tooltip"><img id="ti" alt=""><div><div><span class="tw" id="tw"></span><span class="tp" id="tp"></span></div><div class="td" id="td"></div></div></div>
+<script>
+var V={"threat": {"p": "noun", "d": "Something that could cause harm or danger.", "img": ""}, "rustle": {"p": "noun", "d": "A soft, dry sound, like leaves or paper moving.", "img": ""}, "savannah": {"p": "noun", "d": "A flat, grassy land in a warm place, with few trees.", "img": ""}, "huddled": {"p": "verb", "label": "huddle", "d": "To press close together, or curl up small, often from fear or cold.", "img": ""}, "blared": {"p": "verb", "label": "blare", "d": "To make a very loud sound.", "img": ""}, "scatter": {"p": "verb", "d": "To run or go off in many different directions.", "img": ""}, "parched": {"p": "adjective", "d": "Very dry and thirsty.", "img": ""}, "whimpered": {"p": "verb", "label": "whimper", "d": "To make soft, sad crying sounds.", "img": ""}, "sanctuary": {"p": "noun", "d": "A safe place where people or animals are protected.", "img": ""}, "soothed": {"p": "verb", "label": "soothe", "d": "To calm someone who is upset or hurt.", "img": ""}};
+var tip=document.getElementById("tip"),cur=null,ptype="mouse",hideT=null,wasOpen=false;
+function place(el){
+ var r=el.getBoundingClientRect(),sx=window.pageXOffset,sy=window.pageYOffset,vw=document.documentElement.clientWidth;
+ var tw=tip.offsetWidth,th=tip.offsetHeight;
+ var left=sx+r.left+r.width/2-tw/2;left=Math.max(sx+6,Math.min(left,sx+vw-tw-6));
+ var below=r.bottom+th+10<=window.innerHeight||r.top<th+10;
+ var top=below?sy+r.bottom+8:sy+r.top-th-8;
+ tip.style.left=left+"px";tip.style.top=top+"px";
+}
+function show(el){
+ clearTimeout(hideT);
+ if(cur)cur.classList.remove("on");
+ cur=el;el.classList.add("on");
+ var v=V[el.dataset.k];
+ tip.classList.toggle("big",!!v.big);
+ var im=document.getElementById("ti");if(v.img){im.src=v.img;tip.classList.remove("noimg")}else{im.removeAttribute("src");tip.classList.add("noimg")}
+ document.getElementById("tw").textContent=v.label||el.dataset.k;
+ document.getElementById("tp").textContent="("+v.p+")";
+ document.getElementById("td").textContent=v.d;
+ el.setAttribute("aria-describedby","tip");
+ tip.classList.add("show");place(el);
+}
+function hide(){
+ if(cur){cur.classList.remove("on");cur.removeAttribute("aria-describedby")}
+ tip.classList.remove("show");cur=null;
+}
+[].forEach.call(document.querySelectorAll(".vw"),function(el){
+ el.addEventListener("pointerdown",function(e){ptype=e.pointerType||"mouse";wasOpen=(cur===el)});
+ el.addEventListener("pointerenter",function(e){if(e.pointerType==="mouse")show(el)});
+ el.addEventListener("pointerleave",function(e){if(e.pointerType==="mouse"){hideT=setTimeout(hide,150)}});
+ el.addEventListener("focus",function(){show(el)});
+ el.addEventListener("blur",function(){hide()});
+ el.addEventListener("click",function(e){e.stopPropagation();if(ptype!=="mouse"&&wasOpen){hide()}else{show(el)}});
+ el.addEventListener("keydown",function(e){if(e.key==="Enter"||e.key===" "){e.preventDefault();show(el)}});
+});
+document.addEventListener("click",function(){hide()});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")hide()});
+window.addEventListener("scroll",function(){if(cur&&ptype!=="mouse")hide()},{passive:true});
+window.addEventListener("resize",function(){if(cur)place(cur)});
+/* recording copy: read-along.html?scroll=SECONDS&delay=SECONDS&line=0.15 (line = how far down the window the text being read stays, 0 = top edge, 1 = bottom edge) */
+(function(){
+ var q=new URLSearchParams(location.search),dur=parseFloat(q.get("scroll"));
+ if(!(dur>0))return;
+ var delay=parseFloat(q.get("delay"));if(isNaN(delay))delay=3;
+ var line=parseFloat(q.get("line"));if(isNaN(line))line=0.15;
+ var stopped=false,t0=0;
+ function stop(){stopped=true}
+ window.addEventListener("keydown",function(e){if(e.key==="Escape")stop()});
+ function step(now){
+  if(stopped)return;
+  var f=Math.min(1,(now-t0)/(dur*1000));
+  var H=document.querySelector(".book").getBoundingClientRect().bottom+window.pageYOffset;
+  window.scrollTo(0,Math.max(0,f*H-line*window.innerHeight));
+  if(f<1)requestAnimationFrame(step);
+ }
+ window.scrollTo(0,0);
+ setTimeout(function(){t0=performance.now();requestAnimationFrame(step)},delay*1000);
+})();
+</script></body></html>
