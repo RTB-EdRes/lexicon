@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Yesterday’s News</title>
+<style>
+:root{--bg:#f6f1e7;--page:#ffffff;--ink:#26332c;--accent:#339966;--line:#e2d9c6;--hl:#cdebd9;--card:#fff}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scrollbar-color:var(--accent) var(--line)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Trebuchet MS",Verdana,sans-serif;padding:12px}
+html.embedded body{background:#fff}
+.book{max-width:760px;margin:0 auto;background:var(--page);border:3px solid var(--line);border-left:14px solid var(--accent);border-radius:14px;padding:18px 24px 22px;box-shadow:0 6px 18px rgba(0,0,0,.12)}
+h1{font-family:Georgia,serif;font-size:1.5rem;color:var(--accent);margin:0 0 2px}
+.hint{font-size:.9rem;background:var(--card);border:2px dashed var(--line);border-radius:10px;padding:6px 10px;margin:0 0 16px}
+.hint u{text-decoration:none;border-bottom:2px dotted var(--accent);padding-bottom:1px}
+.text p{font-size:1.2rem;line-height:1.8;margin:0 0 1em;position:relative;padding-left:2.4rem}
+.text p::before{content:attr(data-n);position:absolute;left:0;top:.28em;width:1.8rem;height:1.8rem;line-height:1.8rem;text-align:center;border-radius:50%;background:var(--accent);color:#fff;font-weight:bold;font-size:.95rem}
+.vw{border-bottom:3px dotted var(--accent);cursor:pointer;border-radius:3px;padding-bottom:1px}
+.vw:hover,.vw:focus,.vw.on{background:var(--hl);outline:none}
+.vw:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+#tip{position:absolute;z-index:10;width:250px;background:var(--card);border:3px solid var(--accent);border-radius:12px;padding:8px 10px;box-shadow:0 6px 16px rgba(0,0,0,.25);display:none;gap:10px;align-items:flex-start;font-size:1rem;line-height:1.35}
+#tip.show{display:flex}
+#tip.noimg img{display:none}
+#tip img{width:72px;height:72px;border-radius:8px;border:2px solid var(--line);flex:none;background:#fff}
+#tip .tw{font-family:Georgia,serif;font-weight:bold;font-size:1.15rem;color:var(--accent)}
+#tip .tp{font-style:italic;font-size:.85rem;margin-left:4px;opacity:.8}
+#tip .td{margin-top:2px}
+#tip.big{width:280px;flex-direction:column;gap:6px}
+#tip.big img{width:100%;height:auto;aspect-ratio:560/399;object-fit:contain}
+@media (max-width:480px){.book{padding:14px 14px 18px;border-left-width:10px}.text p{font-size:1.1rem;padding-left:2.2rem}}
+</style><script>try{if(window.self!==window.top)document.documentElement.className+=' embedded'}catch(e){document.documentElement.className+=' embedded'}</script></head><body>
+<div class="book">
+<h1>Yesterday’s News</h1>
+<p class="hint">Hover over (or tap) the <u>underlined words</u> to see what they mean.</p>
+<div class="text">
+<p data-n="1">Yesterday, I woke up before dawn. I wanted to be early on my first day at work. I quickly showered, dressed and headed to the kitchen for breakfast.</p>
+<p data-n="2">“You know, I got my first job when I was twelve too,” Grandpa said when I entered the kitchen.</p>
+<p data-n="3">“I didn’t know you were awake. Why are you up so early?” I asked.</p>
+<p data-n="4">“I wanted to help you get ready for work,” he said. “I think it’s a good thing that you got this job.”</p>
+<p data-n="5">Just then, my mom came in. “Good morning,” she said. “Listen, Leona. I don’t know if this is such a good idea. You’re only 12. Why do you want to go to work at 5 o’clock in the morning?”</p>
+<p data-n="6">“Mom, we’ve talked about this. I want to go to band camp this summer. How are we going to <span class="vw" tabindex="0" role="button" data-k="afford">afford</span> it if I don’t work? Besides, all I have to do is ride around on my bicycle and <span class="vw" tabindex="0" role="button" data-k="deliver">deliver</span> newspapers to restaurants and businesses.”</p>
+<p data-n="7">“I know,” said Mom. “But it’s so dark out there, and…”</p>
+<p data-n="8">“Listen, Elisha,” Grandpa <span class="vw" tabindex="0" role="button" data-k="interrupted">interrupted</span>. “I know you’re worried. But Leona here is one of the most <span class="vw" tabindex="0" role="button" data-k="responsible">responsible</span> kids in town. She may just be 12, but she’s as <span class="vw" tabindex="0" role="button" data-k="mature">mature</span> as all the mostly-grown teenagers running around. This is good for her.”</p>
+<p data-n="9">I looked at my mom and my grandpa. They both worked hard every day so we could live in our little house and keep food on the table. I knew it wasn’t easy for them. I wanted to help out. And I wanted to go to band camp this summer!</p>
+<p data-n="10">“Mom, you know me and you know I can <span class="vw" tabindex="0" role="button" data-k="handle">handle</span> it. It’s going to be <span class="vw" tabindex="0" role="button" data-k="a piece of cake">a piece of cake</span>. Can you help me pack a lunch, though? Today they’re serving <span class="vw" tabindex="0" role="button" data-k="meatloaf">meatloaf</span> at school. Yuck.”</p>
+<p data-n="11">Mom laughed and rubbed my head like I was still a little girl. Then she started making a giant sandwich with last night’s <span class="vw" tabindex="0" role="button" data-k="leftover">leftover</span> roast beef. Yum!</p>
+<p data-n="12">Today, I’m up again before dawn. It turns out delivering newspapers isn’t all that hard. It sure is early in the morning, though!</p>
+</div>
+</div>
+<div id="tip" role="tooltip"><img id="ti" alt=""><div><div><span class="tw" id="tw"></span><span class="tp" id="tp"></span></div><div class="td" id="td"></div></div></div>
+<script>
+var V={"afford": {"p": "verb", "d": "To have enough money to pay for something.", "img": ""}, "deliver": {"p": "verb", "d": "To bring something to a person or place.", "img": ""}, "interrupted": {"p": "verb", "d": "To stop someone who is talking by speaking before they finish.", "img": "", "label": "interrupt"}, "responsible": {"p": "adjective", "d": "Able to be trusted to do what you should do.", "img": ""}, "mature": {"p": "adjective", "d": "Acting sensible and grown-up for your age.", "img": ""}, "handle": {"p": "verb", "d": "To deal with something successfully.", "img": ""}, "a piece of cake": {"p": "idiom", "d": "Something that is very easy to do.", "img": ""}, "meatloaf": {"p": "noun", "d": "A food made of ground meat shaped like a loaf and baked.", "img": ""}, "leftover": {"p": "adjective", "d": "Not eaten at a meal and saved to eat later.", "img": ""}};
+var tip=document.getElementById("tip"),cur=null,ptype="mouse",hideT=null,wasOpen=false;
+function place(el){
+ var r=el.getBoundingClientRect(),sx=window.pageXOffset,sy=window.pageYOffset,vw=document.documentElement.clientWidth;
+ var tw=tip.offsetWidth,th=tip.offsetHeight;
+ var left=sx+r.left+r.width/2-tw/2;left=Math.max(sx+6,Math.min(left,sx+vw-tw-6));
+ var below=r.bottom+th+10<=window.innerHeight||r.top<th+10;
+ var top=below?sy+r.bottom+8:sy+r.top-th-8;
+ tip.style.left=left+"px";tip.style.top=top+"px";
+}
+function show(el){
+ clearTimeout(hideT);
+ if(cur)cur.classList.remove("on");
+ cur=el;el.classList.add("on");
+ var v=V[el.dataset.k];
+ tip.classList.toggle("big",!!v.big);
+ var im=document.getElementById("ti");if(v.img){im.src=v.img;tip.classList.remove("noimg")}else{im.removeAttribute("src");tip.classList.add("noimg")}
+ document.getElementById("tw").textContent=v.label||el.dataset.k;
+ document.getElementById("tp").textContent="("+v.p+")";
+ document.getElementById("td").textContent=v.d;
+ el.setAttribute("aria-describedby","tip");
+ tip.classList.add("show");place(el);
+}
+function hide(){
+ if(cur){cur.classList.remove("on");cur.removeAttribute("aria-describedby")}
+ tip.classList.remove("show");cur=null;
+}
+[].forEach.call(document.querySelectorAll(".vw"),function(el){
+ el.addEventListener("pointerdown",function(e){ptype=e.pointerType||"mouse";wasOpen=(cur===el)});
+ el.addEventListener("pointerenter",function(e){if(e.pointerType==="mouse")show(el)});
+ el.addEventListener("pointerleave",function(e){if(e.pointerType==="mouse"){hideT=setTimeout(hide,150)}});
+ el.addEventListener("focus",function(){show(el)});
+ el.addEventListener("blur",function(){hide()});
+ el.addEventListener("click",function(e){e.stopPropagation();if(ptype!=="mouse"&&wasOpen){hide()}else{show(el)}});
+ el.addEventListener("keydown",function(e){if(e.key==="Enter"||e.key===" "){e.preventDefault();show(el)}});
+});
+document.addEventListener("click",function(){hide()});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")hide()});
+window.addEventListener("scroll",function(){if(cur&&ptype!=="mouse")hide()},{passive:true});
+window.addEventListener("resize",function(){if(cur)place(cur)});
+</script></body></html>
